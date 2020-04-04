@@ -1,6 +1,6 @@
 # Web Mini-Projects With Vanilla JavaScript
 
-This is the main repository for all of the projects in the course.
+This is the main repository for all of the projects.
 
 - [See all projects](https://abdifatahali.github.io/JS-mini-projects/)
 
