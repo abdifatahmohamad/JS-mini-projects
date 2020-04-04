@@ -1,4 +1,4 @@
-# Web Mini Projects With Vanilla JavaScript
+# Web Mini-Projects With Vanilla JavaScript
 
 This is the main repository for all of the projects in the course.
 
