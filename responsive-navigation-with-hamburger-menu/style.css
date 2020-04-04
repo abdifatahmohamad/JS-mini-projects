@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(219, 28%, 13%);
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+a {
+	color: #3da08f;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h4 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin-top: 0;
+}
+
+.container {
+	padding: 30px;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1200px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.flex > div,
+.flex > ul {
+	flex: 1;
+}
+
+.flex > div:first-child {
+	margin-right: 20px;
+}
+
+.flex > div:last-child {
+	margin-left: 20px;
+}
+
+/* Nav styling */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.nav-ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+
+.nav-ul a {
+	display: inline-block;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.hamburger {
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.hamburger:focus {
+	outline: none;
+}
+
+/* Form Section */
+form {
+	display: flex;
+}
+
+input {
+	border: 1px solid hsl(243, 87%, 12%);
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	flex: 0.7;
+	padding: 15px;
+}
+
+input::placeholder {
+	color: hsl(0, 0%, 75%);
+}
+
+button {
+	border: 1px solid hsl(224, 93%, 58%);
+	background-color: hsl(224, 93%, 58%);
+	border-radius: 2px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	flex: 0.3;
+	padding: 15px;
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.nav-ul {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-ul.show {
+		display: flex;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.logo {
+		width: 80px;
+	}
+
+	.nav-ul li a {
+		padding: 10px;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	.flex > div {
+		width: 100%;
+	}
+
+	.flex > div:first-child {
+		margin-right: 0;
+	}
+
+	.flex > div:last-child {
+		margin-left: 0;
+	}
+
+	.illustration {
+		margin-top: 30px;
+	}
+}
