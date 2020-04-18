@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.openBtn {
+	background-color: coral;
+	border: none;
+	padding: 15px 20px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+}
+
+.openBtn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.modal-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.9s ease;
+}
+
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal-content {
+	width: 800px;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: lavender;
+	padding: 50px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.fa-close {
+	position: absolute;
+	right: 3%;
+	top: 5%;
+	cursor: pointer;
+}
+
+.fa-close:hover,
+.fa-close:focus {
+	color: coral;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-content h1 {
+	margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+	.modal-content {
+		padding: 20px;
+		margin: 0 20px;
+	}
+}
