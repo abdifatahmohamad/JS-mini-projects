@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins';
+	min-height: 100vh;
+	background-color: #f19e9e;
+}
+
+.container {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.main-header {
+	min-height: 60vh;
+	background: url('Awesome.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-header:after {
+	background-color: #000;
+	content: '';
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	color: #cdcdcd;
+	z-index: 1;
+	text-shadow: 3px 3px 10px black;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+
+.container2 {
+	min-height: 70vh;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#job-form {
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input,
+label {
+	display: block;
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+input {
+	width: 280px;
+	padding: 7px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type='submit'] {
+	background-color: #4caf50;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 12px 30px;
+	margin-top: 15px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+input[type='submit']:hover {
+	background-color: #000;
+	transition: all 0.5s ease-in-out;
+}
+
+hr {
+	width: 70%;
+	margin: auto;
+}
+
+table {
+	padding: 40px 10px 40px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+/* table row */
+td {
+	padding-left: 35px;
+	border-top: 2px solid #f2f2f2;
+	padding-bottom: 10px;
+	/* background-color: #f2f2f2; */
+}
+
+table td:first-child {
+	padding: 0;
+}
+
+/* Title head */
+table th {
+	font-size: 18px;
+	padding-left: 80px;
+	padding-bottom: 10px;
+	/* background-color: rgba(247, 14, 247, 0.133);
+	max-width: 126px; */
+}
+table th:first-child {
+	padding: 0;
+}
+
+/*  This is error (alerts) classes */
+.success,
+.error {
+	color: white;
+	padding: 5px;
+	margin: 5px 0 15px 0;
+	text-align: center;
+}
+
+.success {
+	background: green;
+}
+
+.error {
+	background: red;
+}
+
+.delete {
+	background-color: #f04025;
+	color: #fff;
+	padding: 1px 8px;
+	border-radius: 3px;
+	/* border-top: 2px solid #f2f2f2; */
+}
+
+.delete:hover {
+	background-color: #000;
+	transition: all 0.7 ease-in-out;
+}
+
+td a {
+	text-decoration: none;
+}
