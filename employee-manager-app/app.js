@@ -1,5 +1,5 @@
 // Basic JS OOP using ES6 Classes
-// Employee class:
+// Job class:
 
 class Job {
 	constructor(name, position, employee) {
