@@ -1,6 +1,7 @@
 var i = 0; // Start Point
 var images = []; // Images Array
 var time = 3000; // Time Between Switch
+
 // Image List
 images[0] = './images/cat1.jpg';
 images[1] = './images/cat2.jpg';
