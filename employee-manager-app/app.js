@@ -126,7 +126,7 @@ class Store {
 // DOM load Event:
 document.addEventListener('DOMContentLoaded', Store.displayJobs);
 
-/******************************************************/
+/*****************************************************/
 
 //Event Listener for add employee:
 
