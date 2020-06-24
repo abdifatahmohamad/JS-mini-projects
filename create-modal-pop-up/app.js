@@ -16,4 +16,3 @@ window.addEventListener('click', (e) => {
 	}
 });
 
-
