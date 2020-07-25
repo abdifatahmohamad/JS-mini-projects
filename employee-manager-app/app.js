@@ -1,7 +1,5 @@
 // Basic JS OOP using ES6 Classes
 // Job class:
-
-
 class Job {
 	constructor(name, position, employee) {
 		this.name = name;
