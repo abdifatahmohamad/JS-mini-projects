@@ -2,7 +2,7 @@
 
 This is the main repository for all of the projects.
 
-- [See all projects](https://abdifatahali.github.io/JS-mini-projects/)
+- [See all projects](https://abdifatahdev.github.io/JS-mini-projects/)
 
 |  #  |            Project             | Live Demo |
 | :-: | :----------------------------: | :-------: |
