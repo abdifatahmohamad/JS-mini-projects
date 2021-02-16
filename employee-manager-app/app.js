@@ -185,5 +185,3 @@ document
 		// Make sure to Prevent the default
 		e.preventDefault();
 	});
-
-
