@@ -29,4 +29,3 @@ function changeImg() {
 
 // Run function when page loads
 window.onload = changeImg;
-
